@@ -15,10 +15,10 @@ export default function Document() {
     if (pageId) {
       if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
         // iOS Devices
-        window.location.href = `app.mediceo.com://shared?pageId=${pageId}`;
+        window.location.href = `com.mediceo.app://shared?pageId=${pageId}`;
       } else if (/android/i.test(userAgent)) {
         // Android Devices
-        window.location.href = `app.mediceo.com://shared?pageId=${pageId}`;
+        window.location.href = `com.mediceo.app://shared?pageId=${pageId}`;
       } else {
         // Web Redirection
         router.push(`https://app.mediceo.com/shared?pageId=${pageId}`);
