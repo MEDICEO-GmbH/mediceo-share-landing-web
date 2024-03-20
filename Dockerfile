@@ -1,4 +1,4 @@
-FROM node:16.16.0-alpine
+FROM node:19.4.0-alpine
 
 # set working directory
 WORKDIR /
