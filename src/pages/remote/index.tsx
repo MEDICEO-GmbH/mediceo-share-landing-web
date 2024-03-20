@@ -23,6 +23,7 @@ export default function Document() {
         // Web Redirection
         router.push(`https://app.mediceo.com/shared?pageId=${pageId}`);
       }
+      window.close();
     }
   }, []);
   return <div></div>;
